@@ -1,22 +1,45 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
+    <!--Content in the head element is not visibl ein the browser window, although the title will appear
+    in the title bar or page tabe.-->
     <title>Block Elements</title>
 </head>
 
 <body>
-    <p>
-        This is some content that should appear on the page as a block of text. It should appear as a separate
-        block with empty lines before and after this block.
-    </p>
-    <p>
-        This is an additional paragraph. Again this should appear with empty lines before and after this block.
-    </p>
-    <h1>This is the most important heading.</h1>
-    <h2>This is the second heading.</h2>
-    <h3>This is the third heading.</h3>
-    <h4>This is the fourth heading.</h4>
-    <h5>This is the fifth heading.</h5>
-    <h6>This is the least important heading.</h6>
+    <!--Any content you want users to see in the brower window must be in the body element-->
+    <header>
+        <!--The header element typically includes a lind to the website's home page, the page's title, and 
+        links to other pages in the website, and it usually appears across the top of the browser window-->
+        <h1>The Title of the Page</h1>
+    </header>
+    <!--The main content of the page will appear between the header and the footer elements. It is common
+    to use one or more div elements to break the content into chunks that should use the asme formatting
+    options when CSS is added to the page.-->
+
+    <div id="main-content">
+        <p>
+            This is some content that should appear on the page as a block of text. It should appear as a separate
+            block with empty lines before and after this block.
+        </p>
+        <p>
+            This is an additional paragraph. Again this should appear with empty lines before and after this block.
+        </p>
+        <hr /> <!--an hr element is useful for creating a logical separation between sections of a Web page.-->
+        <h1>This is the most important heading.</h1>
+        <h2>This is the second heading.</h2>
+        <h3>This is the third heading.</h3>
+        <h4>This is the fourth heading.</h4>
+        <h5>This is the fifth heading.</h5>
+        <h6>This is the least important heading.</h6>
+    </div>
+    
+    <hr />
+
+    <footer>
+        <!--The footer element normally appears at the bottom of the body element, often with links to 
+        other pages in the website and legal information about using the page.-->
+        &copy; This is how to do the copyright symbol!
+    </footer>
 </body>
 </html>
