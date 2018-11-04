@@ -1,0 +1,56 @@
+/*
+Creator: Sam Henningsen
+Date created: 11/04/2018
+Date last modified:
+*/
+
+/* Form Styling */
+label, fieldset {
+    font-size: 1.1em;
+}
+input[type=text] {
+    border: 2px solid #12130f;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+fieldset {
+    background-color: #fffbfc;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+select, textarea {
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    background-color: #143642;
+    color: #fffbfc;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #f2eded;
+    color: #143642;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #12130f;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+
