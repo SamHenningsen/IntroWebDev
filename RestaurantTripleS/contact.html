@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<!--
+    Name: Sam Henningsen
+    Date Created: 11/03/2018 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us</title>	
+    </head> 
+    
+    <body>
+		<main>
+			<header>
+				<h1>Sam's Savory Saloon</h1>
+			</header>
+	
+			<nav>
+				<hr />
+				<p><a href="index.html">Home</a></p>
+				<p><a href="menu.html">Menu</a></p>
+				<p><a href="contact.html">Contact Us</a></p>
+				<hr />
+            </nav>
+
+            <form action="submit.html" method="POST">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" /><br/>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" /><br/>
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone" id="phone" /><br/>
+                <label for="reason">Reason for Inquiry: </label>
+                <select name="reason" id="reason">
+                    <option value="catering" selected>Catering</option>
+                    <option value="private">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select><br/>
+                <label for="info">Additional Information: </label>
+                <textarea name="info" id="info"></textarea><br/>
+                <label for="history">Have you been to the restaurant?</label>
+                <div id="history">
+                    <input type="radio" name="history" id="choice1" value="no" checked/>
+                    <label for="choice1">No</label>
+                    <input type="radio" name="history" id="choice2" value="yes"/>
+                    <label for="choice2">Yes</label>
+                </div>
+                <label for="bestDays">Best days to contact you:</label>
+                <div id="bestDays">
+                    <input type="checkbox" name="bestDays" id="monday" value="monday"/>
+                    <label for="monday">M</label>
+                    <input type="checkbox" name="bestDays" id="tuesday" value="tuesday"/>
+                    <label for="tuesday">T</label>
+                    <input type="checkbox" name="bestDays" id="wednesday" value="wednesday"/>
+                    <label for="wednesday">W</label>
+                    <input type="checkbox" name="bestDays" id="thursday" value="thursday"/>
+                    <label for="thursday">Th</label>
+                    <input type="checkbox" name="bestDays" id="friday" value="friday"/>
+                    <label for="friday">F</label>
+                </div>
+                <input type="submit" name="submit" value="Send Request">
+            </form>
+
+			<footer>
+				<hr />
+				<p>186 Blackwell Street, Anchorage, Alaska, 99515</p>
+				<p>907-555-9537</p>
+			</footer>
+		</main>
+    </body> 
+</html>
