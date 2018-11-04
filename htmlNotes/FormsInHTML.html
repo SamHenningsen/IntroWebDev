@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<!--
+    Name: Sam Henningsen
+    Date Created: 11/03/2018
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Forms in HTML</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Form Example</h1>
+        </header>
+        <form action="fakePage.html" method="post">
+            Text Input: <input type="text" name="myTextInput" required/>*<br/>
+            Radio Buttons:<br/>
+            <input type="radio" name="answer" value="YES" checked/>Yes<br/>
+            <input type="radio" name="answer" value="NO"/>No<br/>
+            <input type="radio" name="answer" value="MAYBE"/>Maybe<br/>
+            Password Input: <input type="password" name="userPassword" required/>*<br/>
+            <input type="checkbox" name="myChoices" id="Soup" checked>Soup<br/>
+            <input type="checkbox" name="myChoices" id="Salad" checked>Salad<br/>
+            <input type="checkbox" name="myChoices" id="Fries" checked>Fries<br/>
+            <input type="checkbox" name="myChoices" id="Dessert" checked>Dessert<br/>
+            <select name="phones" required>
+                <option value="">(Select One)</option>
+                <option value="iPhone6">Mac Os</option>
+                <option value="GalaxyS6">Windows</option>
+                <option value="Nexus5">Linux</option>
+            </select>*<br/>
+            <textarea name="briefDescription"></textarea><br/>
+            <input type="submit" /><input type="reset" /><br/>
+        </form>
+        <p>* Required Feild</p>
+    </body> 
+</html>
