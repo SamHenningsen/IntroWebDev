@@ -6,15 +6,39 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Menu</title>	
+        <title>Menu</title>
+        <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+        <style>
+            table, th, td {
+                border: 1px solid #DE541E;
+				border-collapse: collapse;
+                padding: 1px 1px;
+                margin: 0;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+            }
+            th{
+                padding-top: 10px;
+                font-size: 1.2em;
+            }
+			tr{
+				background-color: #DE541E;
+            }
+            td{
+                width: 33%;
+                text-align: center;
+                vertical-align: top;
+            }
+        </style>
     </head> 
     
     <body>
-		<main>
-			<header>
-				<h1>Sam's Savory Saloon</h1>
-			</header>
-	
+        <header>
+                <h1>Sam's Savory Saloon</h1>
+        </header>
+        <main>
 			<nav>
 				<hr />
 				<p><a href="index.html">Home</a></p>
@@ -92,12 +116,10 @@
                     </tr>
                 </table>
             </section>
-
-			<footer>
-				<hr />
-				<p>186 Blackwell Street, Anchorage, Alaska, 99515</p>
-				<p>907-555-9537</p>
-			</footer>
-		</main>
+        </main>
+		<footer>
+			<p>186 Blackwell Street, Anchorage, Alaska, 99515</p>
+			<p>907-555-9537</p>
+		</footer>
     </body> 
 </html>

@@ -6,15 +6,15 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Home Page</title>	
+		<title>Home Page</title>
+		<link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />	
     </head> 
     
     <body>
+		<header>
+			<h1>Sam's Savory Saloon</h1>
+		</header>
 		<main>
-			<header>
-				<h1>Sam's Savory Saloon</h1>
-			</header>
-	
 			<nav>
 				<hr />
 				<p><a href="index.html">Home</a></p>
@@ -25,12 +25,14 @@
 	
 			<section>
 				<article id="about-us">
-					<img src="images/restaurant.jpg" alt="" style="width : 400px">
+					<div style="text-align:center;">
+					<img src="images/restaurant.jpg" alt="" width="400"/>
+					</div>
                     <p><span id="homeHeading">Restaurant Description</span></p> <!--Without knowing what all CSS can do, this is to match what the wireframe looks like.-->
                     <p>
                         Sam's Savory Saloon is a family owned restaurant dating back to 1952. Named after the founder, Sam Wilson,
                         the Saloon originated as a Texas Style restaurant based on Sam's roots in Austin, Texas. The
-                        food quickly changed after the only American Style restaurant in Anchorage burned down in 1953. 
+                        food quickly changed after the only American Style restaurant in Anchorage burned down in 1959. 
                         Sam's culinary expertise and desire to please his customers drove this abrupt change as people
                         craved American Style food.
                     </p>
@@ -41,12 +43,10 @@
                     </p>
 				</article>
 			</section>
-	
-			<footer>
-				<hr />
-				<p>186 Blackwell Street, Anchorage, Alaska, 99515</p>
-				<p>907-555-9537</p>
-			</footer>
 		</main>
+		<footer>
+			<p>186 Blackwell Street, Anchorage, Alaska, 99515</p>
+			<p>907-555-9537</p>
+		</footer>
     </body> 
 </html>
