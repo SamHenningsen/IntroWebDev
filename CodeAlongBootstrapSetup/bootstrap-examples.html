@@ -21,6 +21,10 @@
             nav .btn:hover {
                 font-weight: bold;
             }
+            .card-header, .card-header .btn{
+                background-color: #5b7d87;
+                color: #fef9ff;
+            }
         </style>    
     </head>
     <body>
@@ -52,6 +56,42 @@
                         Donec faucibus placerat arcu. Vivamus sit amet ultricies.
                     </p>
                 </div>
+            </div>
+			<div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="portfolio01">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                My First Portfolio Piece
+                            </button>
+                        </h5>
+                    </div> <!-- End of #portfolio01 div -->
+
+					<div id="collapseOne" class="collapse" aria-labelledby="portfolio01" data-parent="#accordionExample">
+						<div class="card-body">
+							<p><a href="" target="_blank">Name of Website</a></p>
+							<figure><img src="images/website-1778529.png" alt="Screenshot of home page"></figure>
+						</div> <!-- End of .card-body div -->
+					</div> <!-- End of #collapseOne div -->
+                </div> <!-- End of first .card div -->
+                
+                <div class="card">
+                    <div class="card-header" id="portfolio02">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                My Second Portfolio Piece
+                            </button>
+                        </h5>
+                    </div> <!-- End of #portfolio02 div -->
+                    <div id="collapseTwo" class="collapse" aria-labelledby="portfolio02" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="">Name of Other Website</a></p>
+                            <p>Here is a random paragraph to add content to the accordion.</p>
+                        </div> <!-- End of .card-body div -->
+                    </div> <!-- End of #collapseTwo div -->
+                </div> <!-- End of second .card div -->
             </div>
         </div>
 

@@ -2,13 +2,16 @@
 <!--
     Name: Sam Henningsen
     Date Created: 11/03/2018 
-    Most recent revision:
+    Most recent revision: 11/10/2018
 -->
 <html lang="en"> 
     <head> 
         <title>Menu</title>
         <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
         <style>
+            #menuData{
+                margin-bottom: 1em;
+            }
             table, th, td {
                 border: 1px solid #DE541E;
 				border-collapse: collapse;
@@ -40,15 +43,14 @@
         </header>
         <main>
 			<nav>
-				<hr />
 				<p><a href="index.html">Home</a></p>
 				<p><a href="menu.html">Menu</a></p>
-				<p><a href="contact.html">Contact Us</a></p>
-				<hr />
+                <p><a href="contact.html">Contact Us</a></p>
+                <div style="clear:both"></div>
             </nav>
             
-            <section>
-                <table>
+            <div id="menuData">
+                <table id="firstThree">
                     <tr>
                         <th>Burger and Fries</th>
                         <th>Hot Dog and Chips</th>
@@ -80,7 +82,7 @@
                         </td>
                     </tr>
                 </table>
-				<table>
+				<table id="secondThree">
                     <tr>
                         <th>Tenderloin Sandwich and Chips</th>
                         <th>House Salad</th>
@@ -113,6 +115,27 @@
                             french fries <br/>
                             $7.95
                         </td>
+                    </tr>
+                </table>
+                <table id="beverages">
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                    <tr>
+                        <td>Root Beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
                     </tr>
                 </table>
             </section>

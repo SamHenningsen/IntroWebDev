@@ -2,6 +2,13 @@ html, body {
     height: 100%;
     box-sizing: border-box;
     margin: 0;
+    
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #12130f;
     background-color: #FFE1A8;
 }
 
@@ -15,6 +22,7 @@ header, footer {
     margin: 0;
 }
 header {
+    font-family: cursive;
     padding-top: 10px;
     padding-bottom: 8px;
     top: 0;
@@ -26,6 +34,32 @@ footer {
     bottom: 0;
 }
 
-main {
-    margin: 7px;
+nav {
+    border-top: 3px dashed #5c2713;
+    border-bottom: 3px dashed #5c2713;
+    margin: 4px 0;
+}
+
+nav a {
+    background-color: #702f17;
+    color: #e8eef2;
+    padding: 8px;
+    border: thin solid #12130f;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+nav a:visited {
+    color: #94989b;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+nav a:active {
+    font-weight: bold;
+    text-decoration: none;
 }
