@@ -1,4 +1,4 @@
 function rollDice(numSides){
-    return Math.floor(Math.randon() * numSides) + 1;
+    return Math.floor(Math.random() * numSides) + 1;
 }
 
