@@ -2,7 +2,7 @@
 <!--
     Name: Sam Henningsen
     Date Created: 11/03/2018 
-    Most recent revision: 11/10/2018
+    Most recent revision: 11/11/2018
 -->
 <html lang="en"> 
     <head> 
@@ -12,7 +12,9 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
-		<style>/*
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
 			.jumbotron {
     			background-color: #e8cd99;
 				border: none;
@@ -22,7 +24,7 @@
 			.jumbotron .display-4 {
 				font-size: 2.2em;
 				margin: 0;
-			}*/
+			}
 		</style>
     </head> 
     
@@ -44,40 +46,12 @@
 					<a class="nav-link" href="contact.html">Contact Us</a>
 				</li>
 			</nav>
-			<div id="carouselIndicators" class="text-center carousel slide" data-ride="carousel">
-					<!--<div id="carouselIndicators" class="carousel slide" data-ride="carousel">-->
-						<ol class="carousel-indicators">
-							<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-							<li data-target="#carouselIndicators" data-slide-to="1"></li>
-							<li data-target="#carouselIndicators" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-									<p>Uno</p>
-									<!--
-									<h1 class="display-4">New Fairbanks Location!</h1>
-									<p class="lead">
-										Come join us in our grand opening of our second location in Fairbanks on January 12, 2019! The first 50 guests will
-										receive a free Sam's Savory Saloon T-shirt!
-									</p>
-									-->
-							</div>
-							<div class="carousel-item">
-								Two
-							</div>
-							<div class="carousel-item">
-								Three
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-						</a>
-							<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					<!--div-->
+			<div class="jumbotron text-center">
+				<h1 class="display-4">New Fairbanks Location!</h1>
+				<p class="lead">
+					Come join us in our grand opening of our second location in Fairbanks on January 12, 2019! The first 50 guests will
+					receive a free Sam's Savory Saloon T-shirt!
+				</p>
 			</div>
 	
 			<section>
@@ -85,7 +59,7 @@
 					<div style="text-align:center; margin: 1em auto;">
 					<img src="images/restaurant.jpg" alt="" width="400"/>
 					</div>
-                    <p><span id="homeHeading">Restaurant Description</span></p> <!--Without knowing what all CSS can do, this is to match what the wireframe looks like.-->
+                    <p><span id="homeHeading">About Our Restaurant:</span></p> <!--Without knowing what all CSS can do, this is to match what the wireframe looks like.-->
                     <p>
                         Sam's Savory Saloon is a family owned restaurant dating back to 1952. Named after the founder, Sam Wilson,
                         the Saloon originated as a Texas Style restaurant based on Sam's roots in Austin, Texas. The
@@ -100,6 +74,28 @@
                     </p>
 				</article>
 			</section>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					
+				<ol class="carousel-indicators">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#myCarousel" data-slide-to="1"></li>
+				  <li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<p class="text-center">Attend the Grand Opening of our Fairbanks location!</p>
+						</div>
+				
+						<div class="item">
+							<p class="text-center">Stop in to try our new seasonal menu, with special options for this season!</p>
+						</div>
+					
+						<div class="item">
+							<p class="text-center">This month's drink of the month: SG Special Brew</p>
+						</div>
+					</div>
+			</div>
 		</main>
 		<footer>
 			<p>186 Blackwell Street, Anchorage, Alaska, 99515</p>

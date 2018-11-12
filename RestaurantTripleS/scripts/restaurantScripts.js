@@ -45,6 +45,9 @@ function validateForm() {
         return false;
     }
 
+    alert("Your form has been submitted! We will get back to you as soon as possible!");
+    document.forms["contactForm"].reset();
+
     /*Other variables are named in case needed later. Reason for inquiry is pre selected, 
     so it is not checke for, even though it is a manditory field. */
 
