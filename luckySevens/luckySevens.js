@@ -48,7 +48,7 @@ function validateBet() {
     }
     result = bettingResults(Number(bet));
 
-    document.getElementById("results").style.display = "block";
+    document.getElementById("results").style.display = "";
     document.getElementById("submitButton").innerText = "Play Again";
     document.forms["betForm"]["bet"].value = 0;
     document.forms["betForm"]["bet"].focus();

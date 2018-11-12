@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script type="text/JavaScript" src="luckySevens.js"></script>
     <style>
+        body{
+            font-family:  cursive;
+        }
         button[type=submit], .input-group-addon{
             border: 2px solid #12130f;
         }
@@ -16,6 +19,19 @@
         input[type=number]{
             border-top: 2px solid #12130f;
             border-bottom: 2px ridge #12130f;
+        }
+        .table{
+            margin: 0 auto;
+            width: auto;
+        }
+        table.table-bordered, table.table-bordered > tbody > tr > td{
+            border-color: #12130f;
+        }
+		tr:nth-child(even){
+			background-color: #d3d4d3;
+        }
+        tr#rowOne{
+            background-color: #bebebd
         }
     </style>
 </head>
@@ -41,9 +57,10 @@
                 </div>
             </div>    
         </form>
-        <table id="results" class="table table-striped" style="display:none;">
+        <div class="container-fluid text-centered">
+            <table id="results" class="table table-bordered" style="display:none;">
                 <tbody>
-                    <tr>
+                    <tr id="rowOne">
                         <td>Starting Bet</td>
                         <td><span id="startingBet"></span></td>
                     </tr>
@@ -61,6 +78,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
